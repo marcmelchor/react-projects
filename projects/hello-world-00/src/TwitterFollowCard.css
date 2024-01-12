@@ -1,0 +1,74 @@
+.follow-card {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 0.8rem;
+  justify-content: space-between;
+}
+
+.follow-card:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.follow-card__header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.follow-card__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 1000px;
+}
+
+.follow-card__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.follow-card__info__user {
+  opacity: 0.6;
+}
+
+.follow-card__follow-button {
+  cursor: pointer;
+  margin-left: 16px;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-weight: bold;
+  transition: 0.3s ease background-color;
+}
+
+.follow-card__follow-button:hover {
+  background-color: #09f;
+}
+
+.follow-card__follow-button--is-following {
+  border: 1px solid #bbb;
+  background: transparent;
+  color: #fff;
+  width: 140px;
+}
+
+.follow-card__follow-button--is-following:hover {
+  background-color: rgba(255, 0, 0, 0.178);
+  color: red;
+  border: 1px solid red;
+}
+
+.follow-card__follow-button__text {
+  display: block;
+}
+.follow-card__follow-button--is-following:hover .follow-card__follow-button__text {
+  display: none;
+}
+
+.follow-card__follow-button--is-following:hover .follow-card__follow-button__text--unfollow {
+  display: block;
+}
+
+.follow-card__follow-button__text--unfollow {
+  display: none;
+}
